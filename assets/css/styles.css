@@ -1,12 +1,57 @@
-#home.bg-primary{
-    background-color: red;
+body{
+        font-family: 'Open Sans';
+        position: relative;
 }
-#about.bg-primary{
-    background-color: blue;
+
+section{
+    padding: 100px 0;
 }
-#gallery.bg-primary{
-    background-color: green;
+
+section hr{
+    max-width: 50px;
+    border-width: 3px;
 }
-#blog.bg-primary{
-    background-color: yellow;
+
+.navbar-default{
+    background: transparent;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
+.navbar-default.affix{
+    background-color: #2a2a2a;
+}
+.navbar-default .navbar-brand{
+    font-family: 'Open Sans';
+    color: #f3f3f3;
+    text-shadow: none;
+}
+
+.navbar-default .navbar-nav > li > a{
+    font-family: 'Open Sans';
+    color: #f3f3f3;
+    text-shadow: none;
+}
+
+.navbar-default .navbar-nav > li > a:focus{
+
+}
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: white;
+}
+
+#Home.bg-primary{
+    background-color: #982f2f;
+}
+#About.bg-primary{
+    background-color: #3248a6;
+}
+#Gallery.bg-primary{
+    background-color: #427e3e;
+}
+#Blog.bg-primary{
+    background-color: #bdc435;
+}
+
+#Contact.bg-primary{
+    background-color: #883182;
 }

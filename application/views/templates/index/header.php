@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,36 +10,44 @@
         <!-- Local Bootstrap - Optional theme -->
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap-theme.min.css">
 
-        <!-- Local jQuery (necessary for Bootstraps JavaScript plugins) -->
-        <script src="<?php echo base_url(); ?>assets/js/jquery.min.js"></script>
-
-        <!-- Local Bootstrap - Latest compiled and minified JavaScript -->
-        <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
-
-        <!-- Local Bootstrap - Latest compiled and minified JavaScript -->
-        <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
-
         <!-- Site Stylesheet -->
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styles.css">
+
+        <!-- Site Fonts -->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/fonts.css">
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
     </head>
     <body>
-        <nav class="navbar navbar-inverse navbar-static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">dragoshi</a>
+        <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dragNav">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                     </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">dragoshi</a>
                 </div>
-                <div class="collapse navbar-collapse" id="dragNav">
-                    <ul class="nav navbar-nav">
-                        <li><a href="<?php echo base_url(); ?>home">Home</a></li>
-                        <li><a href="<?php echo base_url(); ?>about">About</a></li>
-                        <li><a href="<?php echo base_url(); ?>blog">Blog</a></li>
-                        <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="menu-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#About">About</a>
+                        </li>
+                        <li>
+                            <a href="#Gallery">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#Blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
                     </ul>
                 </div>
+                <!-- /.navbar-collapse -->
             </div>
         </nav>
