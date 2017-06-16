@@ -24,7 +24,9 @@ class Gallery extends CI_Controller{
                 //Put reason for errors in array for use in view
                 $error = array('error' => $this->upload->display_errors());
                 //Call view with error
+                $this->load->view('templates/index/header');
                 $this->load->view('forms/upload_form', $error);
+                $this->load->view('templates/index/footer');
 
         }else
         {
@@ -36,7 +38,9 @@ class Gallery extends CI_Controller{
                 //Insert image information into database with model function dbInsert
                 $this->ImageUpload_Model->dbInsert($db_data);
                 //Call upload success page
+                $this->load->view('templates/index/header');
                 $this->load->view('forms/upload_success', $db_data);
+                $this->load->view('templates/index/footer');
         }
     }
 }
