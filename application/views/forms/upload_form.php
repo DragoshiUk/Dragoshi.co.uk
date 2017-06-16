@@ -1,19 +1,16 @@
-<html>
-    <head>
-        <title>Upload Form</title>
-    </head>
-    <body>
+<div id="form_container" class="container">
 
-        <?php echo $error;?>
+    <h2>Upload</h2>
 
-        <?php echo form_open_multipart('Gallery/do_upload');?>
-        <input type="file" name="userfile" size="20" />
-        <br /><br />
-        Description
-        <br />
-        <textarea name="description"></textarea>
-        <br /><br />
-        <input type="submit" value="upload" />
-        </form>
-    </body>
-</html>
+    <form action="do_upload" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+        <div class="form-group">
+        <label for="file-upload">Choose an image</label>
+        <input id="file-upload" class="form-control-file" type="file" name="userfile" size="20" />
+
+        <div class="form-group">
+        <label for="file-description">Description</label>
+        <textarea class="form-control" id="description" name="description"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Upload</button>
+    </form>
+</div>

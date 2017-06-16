@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title><?php echo $title; ?></title>
+        <title><?php if(isset($title)){ echo $title; }?></title>
 
         <!-- Local Bootstrap -->
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
@@ -32,19 +32,19 @@
                 <div class="collapse navbar-collapse" id="menu-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#Home">Home</a>
+                            <a href="<?php if(current_url() !== base_url()){echo base_url();}?>#Home">Home</a>
                         </li>
                         <li>
-                            <a href="#About">About</a>
+                            <a href="<?php if(current_url() !== base_url()){echo base_url();}?>#About">About</a>
                         </li>
                         <li>
-                            <a href="#Gallery">Gallery</a>
+                            <a href="<?php if(current_url() !== base_url()){echo base_url();}?>#Gallery">Gallery</a>
                         </li>
                         <li>
-                            <a href="#Blog">Blog</a>
+                            <a href="<?php if(current_url() !== base_url()){echo base_url();}?>#Blog">Blog</a>
                         </li>
                         <li>
-                            <a href="#Contact">Contact</a>
+                            <a href="<?php if(current_url() !== base_url()){echo base_url();}?>#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
