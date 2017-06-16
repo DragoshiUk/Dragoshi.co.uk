@@ -14,7 +14,7 @@ $(document).ready(function() {
                 }
             });
 
-        $("body").scrollspy({target: '#navigation', offset: 50});
+        $("body").scrollspy({target: '#navigation', offset: 52});
 
         $("#navigation").affix({
             offset: {
