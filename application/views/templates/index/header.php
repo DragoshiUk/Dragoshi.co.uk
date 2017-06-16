@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/font-awesome.min.css">
     </head>
     <body>
-        <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+        <nav id="navigation" class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
