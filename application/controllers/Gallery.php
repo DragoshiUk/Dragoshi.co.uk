@@ -37,7 +37,6 @@ class Gallery extends CI_Controller{
                 $this->ImageUpload_Model->dbInsert($db_data);
                 //Call upload success page
                 $this->load->view('forms/upload_success', $db_data);
-
         }
     }
 }

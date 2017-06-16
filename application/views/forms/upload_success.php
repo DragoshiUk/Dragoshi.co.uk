@@ -3,4 +3,4 @@
     echo $description;
     echo '<img src='.base_url().'upload/'.$name.'>';
 ?>
-<video src="<?php echo base_url()?>assets/video/ohyes.mp4" autoplay loop></video>
+<video src="<?php echo base_url()?>assets/video/ohyes.mp4" autoplay loop> </video>
